@@ -12,23 +12,23 @@ def pizza(crust, size, extra):
         harga += 100910                             #Menambahkan harga pesanan(harga akan otomatis diperbarui) 
         if extra == 'yes':                          #Jika pesanan ingin extra keju
             harga += 16364                          #Maka harga pesanan akan ditambah lagi sesuai harga tersebut
-    elif crust == 'pan pizza' and size == 'large':#Kondisi apakah benar pesanan pan pizza dengan ukuran personal
+    elif crust == 'pan pizza' and size == 'large':#Kondisi apakah benar pesanan pan pizza dengan ukuran large
         harga += 132727                           #Menambahkan harga pesanan(harga akan otomatis diperbarui)
-        if extra == 'yes':
-            harga += 19091
+        if extra == 'yes':                        #Jika pesanan ingin extra keju
+            harga += 19091                        #Maka harga pesanan akan ditambah lagi sesuai harga tersebut
     #pilihan statement di varian stuffed crust cheese
-    elif crust == 'stuffed crust cheese' and size == 'personal':
-        harga += 55455
-        if extra == 'yes':
-            harga += 13636
-    elif crust == 'stuffed crust cheese' and size == 'regular':
-        harga += 120910
-        if extra == 'yes':
-            harga += 16364
-    elif crust == 'stuffed crust cheese' and size == 'large':
-        harga += 160000
-        if extra == 'yes':
-            harga += 19091
+    elif crust == 'stuffed crust cheese' and size == 'personal':#Kondisi apakah benar pesanan stuffed crust cheese dengan ukuran personal
+        harga += 55455                         #Menambahkan harga pesanan(harga akan otomatis diperbarui)   
+        if extra == 'yes':                     #Jika pesanan ingin extra keju
+            harga += 13636                     #Maka harga pesanan akan ditambah lagi sesuai harga tersebut
+    elif crust == 'stuffed crust cheese' and size == 'regular':#Kondisi apakah benar pesanan stuffed crust cheese dengan ukuran regular
+        harga += 120910                        #Menambahkan harga pesanan(harga akan otomatis diperbarui)
+        if extra == 'yes':                     #Jika pesanan ingin extra keju
+            harga += 16364                     #Maka harga pesanan akan ditambah lagi sesuai harga tersebut
+    elif crust == 'stuffed crust cheese' and size == 'large':#Kondisi apakah benar pesanan stuffed crust cheese dengan ukuran large
+        harga += 160000                       #Menambahkan harga pesanan(harga akan otomatis diperbarui)
+        if extra == 'yes':                    #Jika pesanan ingin extra keju
+            harga += 19091                    #Maka harga pesanan akan ditambah lagi sesuai harga tersebut
     #pilihan statement di varian stuffed crust sausage
     elif crust == 'stuffed crust sausage' and size == 'personal':
         harga += 52728
