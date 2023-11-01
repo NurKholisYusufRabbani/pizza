@@ -56,17 +56,17 @@ def pizza(crust, size, extra):
         if extra == 'yes':                          #jika pesanan ingin extra cheesy bite
             harga += 19091                          #Maka harga pesanan akan ditambah lagi sesuai harga tersebut
     #pilihan statement di varian crown crust
-    elif crust == 'crown crust' and size == 'personal':
-        harga += 55455
-        if extra == 'yes':
-            harga += 13636
-    elif crust == 'crown crust' and size == 'regular':
-        harga += 120910
-        if extra == 'yes':
-            harga += 16364
-    elif crust == 'crown crust' and size == 'large':
-        harga += 160000
-        if extra == 'yes':
-            harga += 19091
+    elif crust == 'crown crust' and size == 'personal':#Kondisi apakah benar pesanan crown crust dengan ukuran personal
+        harga += 55455                                 #Menambahkan harga pesanan(harga akan otomatis diperbarui)
+        if extra == 'yes':                             #Jika pesanan ingin extra keju
+            harga += 13636                             #Maka harga pesanan akan ditambah lagi sesuai harga tersebut
+    elif crust == 'crown crust' and size == 'regular':#Kondisi apakah benar pesanan crown crust dengan ukuran regular
+        harga += 120910                               #Menambahkan harga pesanan(harga akan otomatis diperbarui)
+        if extra == 'yes':                            #Jika pesanan ingin extra keju
+            harga += 16364                            #Maka harga pesanan akan ditambah lagi sesuai harga tersebut
+    elif crust == 'crown crust' and size == 'large':#Kondisi apakah benar pesanan crown crust dengan ukuran regular
+        harga += 160000                             #Menambahkan harga pesanan(harga akan otomatis diperbarui)
+        if extra == 'yes':                          #Jika pesanan ingin extra keju
+            harga += 19091                          #Maka harga pesanan akan ditambah lagi sesuai harga tersebut
     # Mengembalikan harga pesanan
     return harga
